@@ -1,0 +1,6 @@
+number1=input("Please enter your 1st number: ")
+number2=input("Please enter your 2nd number: ")
+float(number1)
+float(number2)
+sum=number1+number2
+print ("the total of these 2 numbers is: "), sum
