@@ -1,4 +1,0 @@
-number1=input("Please enter your 1st number: ")
-number2=input("Please enter your 2nd number: ")
-sum=float(number1)+float(number2)
-print ("{0}+{1}={2}".format(number1,number2,sum))
