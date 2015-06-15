@@ -1,9 +1,15 @@
-year=int(input("Please enter year you would like to check: "))
+year=input("Please enter year you would like to check: ")
+int(year)
+
 if year%4==0:
-	if year%100==0 and year%400!=0:
-		leapYear="not leap year"
-	else:
-		leapYear="leap year"
+    if year%100==0 and year%400!=0:
+        isLeapYear = False
+    else:
+        isLeapYear = True
 else:
-	leapYear="not leap year"
-print ("This year {} is {}".format(year,leapYear)), 
+    isLeapYear = False
+
+if isLeapYear is True:
+    print ("This year {} is leap year.".format(year))
+else:
+    print ("This year {} is not leap year.".format(year))
