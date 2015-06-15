@@ -1,7 +1,16 @@
-number=int(input("Please enter a number: "))
+number=input("Please enter a number: ")
+int(number)
+
 if number==0:
 	print("0 is neither odd number nor even number.")
-elif number%2==0:
-    print("{} is a even number".format(number))
 else:
-    print("{} is a odd number".format(number))
+	if number%2==0:
+		evenNumber=True
+	else:
+		evenNumber=False
+#output
+if evenNumber is True:
+	print("{} is a even number".format(number))
+else:
+	print("{} is a odd number".format(number))
+	
