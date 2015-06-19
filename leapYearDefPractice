@@ -1,0 +1,18 @@
+year1=input("Please enter year you would like to check: ")
+year=int(year1)
+
+
+if year%4==0:
+        isLeapYear=not(year%100==0 and year%400!=0)
+else:
+    isLeapYear = False
+
+
+def printleapYear(year1,isOrNot):
+	print ("This year {} {} leap year.".format(year1,isOrNot))
+    
+
+if isLeapYear:
+    printleapYear(year1,isOrNot="is")
+else:
+    printleapYear(year1,isOrNot="is not")
