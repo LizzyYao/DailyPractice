@@ -3,16 +3,18 @@ year=int(year1)
 
 
 if year%4==0:
-        isLeapYear=not(year%100==0 and year%400!=0)
+    isLeapYear=not(year%100==0 and year%400!=0)
 else:
     isLeapYear = False
 
 
-def printleapYear(year1,isOrNot):
-	print ("This year {} {} leap year.".format(year1,isOrNot))
+def isLeapYearPrint(isLeapYear=True):
+    print ("This year {} is leap year.".format(year1))
+def notLeapYearPrint(isLeapYear=False):
+    print ("This year {} is not leap year.".format(year1))
     
 
-if isLeapYear:
-    printleapYear(year1,isOrNot="is")
-else:
-    printleapYear(year1,isOrNot="is not")
+
+isLeapYearPrint(isLeapYear=True)
+
+notLeapYearPrint(isLeapYear=False)
