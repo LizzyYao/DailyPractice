@@ -8,13 +8,11 @@ else:
     isLeapYear = False
 
 
-def leapYearPrint():
-	print "This year {} is leap year.".format(year1)
-	 
-def notLeapYearPrint():
-	print "This year {} is not leap year.".format(year1)
+def leapYearPrint(str):
+	print str;
+    
 
 if isLeapYear:
-    leapYearPrint()
+    leapYearPrint(str="This year {} is leap year.".format(year1))
 else:
-    notLeapYearPrint()
+    leapYearPrint(str="This year {} is not leap year.".format(year1))
