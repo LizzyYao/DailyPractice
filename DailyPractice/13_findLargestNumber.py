@@ -1,36 +1,34 @@
 #find largest number in 3 numbers.
 
-number1=input("Please enter 1st number: ")
-number2=input("Please enter 2nd number: ")
-number3=input("Please enter 3rd number: ")
-#convert string to float number.
-number1=float(number1)
-number2=float(number2)
-number3=float(number3)
+#get the numbers from user and convert string to float numbers.
+
+def userInput(ordinal):
+	number=raw_input("please enter " + ordinal + " number: ")
+	number=float(number)
+	return number
+	
+number1=userInput("first")
+number2=userInput("second")
+number3=userInput("third")
 
 
-#find largest number
-def getNumbers(number1,number2,number3):
-    print number1,number2,number3
-    return number1,number2,number3
-getNumbers(number1,number2,number3)
-
-if number1>number2 and number1>number3:
-	largestNumber=number1
-elif number2>number3 and number2>number1:
-	largestNumber=number2
-else:
-	largestNumber=number3
-
-def findLargestNumber(largestNumber):
-	print largestNumber
+def process():
+#evaluate each statement to find the largest number.
+	if number1>number2 and number1>number3:
+		largestNumber=number1
+	elif number2>number3 and number2>number1:
+		largestNumber=number2
+	else:
+		largestNumber=number3
 	return largestNumber
-findLargestNumber(largestNumber)
+		
+largestNumber = process()
+	
+def output(largestNumber):
+	print("The largest number in {} {} and {} is: {}".format(number1,number2,number3,largestNumber))
 
-#output largest number
-def printLargestNumber():
-    print "The numbers you entered are {} {} and{}, ".format(number1,number2,number3)
-    print "The largest number among these numbers is: {}".format(largestNumber)
 
-printLargestNumber()
+output(largestNumber)
+
+
 
