@@ -1,8 +1,7 @@
 #find largest number in 3 numbers.
 
-#get the numbers from user and convert string to float numbers.
-
 def userInput(ordinal):
+#get the numbers from user and convert string to float numbers.
 	number=raw_input("please enter " + ordinal + " number: ")
 	number=float(number)
 	return number
