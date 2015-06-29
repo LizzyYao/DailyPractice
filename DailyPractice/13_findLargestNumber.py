@@ -1,7 +1,7 @@
 #find largest number in 3 numbers.
 
 def userInput(ordinal):
-#get the numbers from user and convert string to float numbers.
+"get the numbers from user and convert string to float numbers."
 	number=raw_input("please enter " + ordinal + " number: ")
 	number=float(number)
 	return number
@@ -12,7 +12,7 @@ number3=userInput("third")
 
 
 def process():
-#evaluate each statement to find the largest number.
+"evaluate each statement to find the largest number."
 	if number1>number2 and number1>number3:
 		largestNumber=number1
 	elif number2>number3 and number2>number1:
