@@ -2,17 +2,16 @@
 
 #get the numbers from user and convert string to float numbers.
 
-def userInput(ordinal):
+def NumberFromUser(ordinal):
 	number=raw_input("please enter " + ordinal + " number: ")
 	number=float(number)
 	return number
 	
-number1=userInput("first")
-number2=userInput("second")
-number3=userInput("third")
+number1=NumberFromUser("first")
+number2=NumberFromUser("second")
+number3=NumberFromUser("third")
 
-
-def process():
+def FindLargestNumber():
 #evaluate each statement to find the largest number.
 	if number1>number2 and number1>number3:
 		largestNumber=number1
@@ -22,13 +21,14 @@ def process():
 		largestNumber=number3
 	return largestNumber
 		
-largestNumber = process()
+largestNumber = FindLargestNumber()
 	
-def output(largestNumber):
+def PrintLargestNumber(largestNumber):
 	print("The largest number in {} {} and {} is: {}".format(number1,number2,number3,largestNumber))
 
 
-output(largestNumber)
+PrintLargestNumber(largestNumber)
+
 
 
 
