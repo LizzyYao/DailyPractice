@@ -4,7 +4,6 @@ def userInputYear():
         year=int(year)
         return year
 
-year=userInputYear()
 
 #evaluate input year is leap year or not.
 def checkLeapYear():
@@ -13,7 +12,6 @@ def checkLeapYear():
     else:
         return True
 		
-LeapYear=checkLeapYear()
 
 #print evaluation result: is or not leap year.
 def printLeapYearResult():
@@ -21,5 +19,7 @@ def printLeapYearResult():
 		print ("This year {} is leap year.".format(year))
 	else:
 		print("This year {} is not a leap year.".format(year))
-	
+
+year=userInputYear()
+LeapYear=checkLeapYear()
 printLeapYearResult()  
