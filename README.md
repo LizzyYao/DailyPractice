@@ -1,2 +1,3 @@
-# PythonAssignment
-# Good good study; day day up
+# PythonPractice
+# T-SQL Practice
+
