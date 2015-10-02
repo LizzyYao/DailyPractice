@@ -5,6 +5,9 @@
 
 # Make sure your procedure prints "upwards", so
 # from 1 up to the input number.
+
+# did you try print_numbers(-3) ?
+
 def print_numbers(n):
     a=1
     while a<=n:
