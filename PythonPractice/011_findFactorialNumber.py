@@ -3,6 +3,8 @@
 # and returns the factorial of
 # that number.
 
+# let's try use recursion to fullfil this 
+
 def factorial(n):
     a=1
     while n>=1:

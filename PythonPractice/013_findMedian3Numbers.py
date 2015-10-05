@@ -11,6 +11,8 @@
 
 # Make sure your procedure has a return statement.
 
+# make it compare 4 numbers
+
 def median(a,b,c):
     if a >= b:
         if b>=c:
