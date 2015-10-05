@@ -11,3 +11,5 @@ print is_friend('Ned')
 
 print is_friend('Moe')
 #>>> False
+
+print is_friend('')
