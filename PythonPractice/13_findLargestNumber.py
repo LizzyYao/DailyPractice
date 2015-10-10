@@ -1,4 +1,6 @@
 #find largest number in 3 numbers.
+### why you need embed getNumberFromUser and findLargestNumber inside largestNumber?
+### let's changed it to 4 numbers
 
 def largestNumber():
 	def getNumberFromUser(ordinal):
