@@ -10,4 +10,4 @@ def findPrimeNumberList(numberList):
 		x=min(numberList)
 		y=max(numberList)
 	return primeList
-print findPrimeNumberList(range(2,101))
+print findPrimeNumberList(range(2,301))
